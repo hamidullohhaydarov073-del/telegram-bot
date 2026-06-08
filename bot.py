@@ -10,7 +10,7 @@ from telegram.ext import (
 )
 
 # ===================== SOZLAMALAR =====================
-BOT_TOKEN = "8607138752:AAHNZEiP6ZEMdvobtZ4tnkpAKmAaxtkXlpk"  # Bu yerga tokeningizni yozing
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8607138752:AAHNZEiP6ZEMdvobtZ4tnkpAKmAaxtkXlpk")  # Bu yerga tokeningizni yozing
 
 # Reklama filtri sozlamalari
 FILTER_ENABLED = True          # True = yoqiq, False = o'chiq
